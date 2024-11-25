@@ -1,0 +1,8 @@
+.logo-carousel-inner{
+ padding: 50px;
+display: flex;
+flex-direction: row;
+}
+.single-logo-item{
+    padding: 20px;
+}

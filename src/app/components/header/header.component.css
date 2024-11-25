@@ -1,0 +1,10 @@
+.top-header-area {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.507);
+    transition: background-color 0.3s ease;
+    padding: 15px;
+}

@@ -1,0 +1,168 @@
+/* Loader styles */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Header styles */
+.top-header-area {
+  position: relative;
+  z-index: 999;
+  padding: 15px 0;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation styles */
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-menu ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.main-menu ul li:hover .sub-menu {
+  display: block;
+}
+
+/* Slider styles */
+.swiper {
+  width: 100%;
+  height: 600px; /* Adjust height as needed */
+  margin-top: 0;
+}
+
+.swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.slide-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slide-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #F28123;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #E07012;
+}
+
+/* Search area styles */
+.search-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  display: none;
+}
+
+.search-area.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main-menu {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
+  
+  .mobile-show {
+    display: block;
+  }
+  
+  .mobile-hide {
+    display: none;
+  }
+}

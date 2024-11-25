@@ -1,0 +1,114 @@
+
+	
+	<!--PreLoader-->
+   <app-preloader></app-preloader>
+    <!--PreLoader Ends-->
+
+	<!--Header Starts-->
+
+	<app-header></app-header>
+
+	<!--Header Ends-->
+
+<!-- Search area starts-->
+<app-search-area
+    *ngIf="isSearchVisible"
+    (close)="hideSearch()"
+    (search)="handleSearch($event)">
+</app-search-area>
+	<!-- end search area -->
+
+	<!-- hero area -->
+	  <!-- <app-hero-area></app-hero-area> -->
+	<app-home-slider></app-home-slider>
+	<!-- end hero area -->
+
+	<!-- features list section -->
+	<app-features-list-section></app-features-list-section>
+	<!-- end features list section -->
+
+	<!-- product section -->
+	 <app-product-section></app-product-section>
+	<!-- end product section -->
+
+	<!-- cart banner section -->
+	<app-cart-banner></app-cart-banner>
+    <!-- end cart banner section -->
+
+	<!-- testimonail-section
+	<div class="testimonail-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1 text-center">
+					<swiper-container class="testimonial-sliders">
+						<swiper-slide class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="../../../assets/img/avaters/avatar1.png" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>Saira Hakim <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="../../../assets/img/avaters/avatar2.png" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>David Niph <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="../../../assets/img/avaters/avatar3.png" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>Jacob Sikim <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</swiper-slide>
+					</swiper-container>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- end testimonail-section -->
+	
+	<!-- advertisement section -->
+	<app-advertisement></app-advertisement>
+	<!-- end advertisement section -->
+	
+	<!-- shop banner -->
+	<app-shop-banner></app-shop-banner>
+	<!-- end shop banner -->
+
+	<!-- latest news -->
+	<app-latest-news></app-latest-news>
+	<!-- end latest news -->
+
+	<!-- logo carousel -->
+	<app-logo-carousel></app-logo-carousel>
+	<!-- end logo carousel -->
+
+	<!-- footer -->
+	<app-footer></app-footer>
+	<!-- end footer -->
+	
+	<!-- copyright -->
+	<app-copyright></app-copyright>
